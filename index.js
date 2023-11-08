@@ -1,8 +1,16 @@
+let string = prompt("Enter a Sentence That Ends With Fullstop.");
+
+alert(`\nThe Length of the Sentence is: ${sen(string).len()}\n
+The Number of Words in the Sentence is: ${sen(string).numWord()}\n
+The Number of Vowels in the Sentence is: ${sen(string).numVowel()}`);
+
+
+
 function sen(string) {
   return {
     len: function() {
       let strLen = string.length;
-      return "The length is: " + strLen;
+      return strLen;
     },
     numWord: function() {
       let wordCount = 0;
@@ -11,7 +19,7 @@ function sen(string) {
           wordCount++;
         }
       }
-      return `The number of words is: ${wordCount + 1}`;
+      return wordCount + 1;
     },
     numVowel: function() {
       let vowelCount = 0;
@@ -26,11 +34,11 @@ function sen(string) {
           vowelCount++;
         }
       }
-      return "The number of vowels is: " + vowelCount;
+      return vowelCount;
     }
   };
 }
 
-const atau = sen("Atau is a man");
+// const atau = sen("Atau is a man");
 
-console.log(atau.numVowel());
+// console.log(atau.numVowel());
