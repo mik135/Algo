@@ -1,6 +1,6 @@
 # Documentation
 
-## This is a solution to the Algorithm and it's element checkpoint
+## This is a solution to the Algorithm and its element checkpoint
 
 **This repository contains a function "sen" that returns a object when passed a string.**
 
