@@ -2,7 +2,7 @@ function sen(string) {
   return {
     len: function() {
       let strLen = string.length;
-      return strLen;
+      return "The length is: " + strLen;
     },
     numWord: function() {
       let wordCount = 0;
@@ -11,7 +11,7 @@ function sen(string) {
           wordCount++;
         }
       }
-      return wordCount + 1;
+      return `The number of words is: ${wordCount + 1}`;
     },
     numVowel: function() {
       let vowelCount = 0;
@@ -26,8 +26,11 @@ function sen(string) {
           vowelCount++;
         }
       }
-      return vowelCount;
+      return "The number of vowels is: " + vowelCount;
     }
   };
 }
 
+const atau = sen("Atau is a man");
+
+console.log(atau.numVowel());
